@@ -1,0 +1,93 @@
+.pic-container {
+  position relative
+  margin-bottom 15px;
+  cursor zoom-in;
+  .pic-img {
+    width 100%;
+    background #ddd;
+  }
+  .pic-hover-wrap {
+    &.pic-hover-fade-enter-active, &.pic-hover-fade-leave-active {
+      transition opacity 0.2s linear
+    }
+    &.pic-hover-fade-enter, &.pic-hover-fade-leave-active {
+      opacity 0
+    }
+    .pic-img-hover-top {
+      position absolute;
+      top 0;
+      left 0;
+      right 0;
+      height 80px;
+      width auto;
+      overflow: hidden;
+      padding 10px;
+      background -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0))
+      color #666;
+      font-size 14px
+      .pic-img-hover-collect {
+        float right ;
+        padding: 5px 8px;
+        border-radius: 3px;
+        background: rgba(255, 255, 255, 0.7);
+        margin-left: 8px;
+        cursor pointer;
+        &:hover {
+          background: rgba(255, 255, 255, 1);
+        }
+      }
+      .pic-img-hover-love {
+        float right;
+        padding: 5px 8px;
+        border-radius: 3px;
+        background: rgba(255, 255, 255, 0.7);
+        cursor pointer;
+        &:hover {
+          background: rgba(255, 255, 255, 1);
+        }
+        span {
+          color #f07373 !important;
+        }
+      }
+    }
+    .pic-img-hover-bottom {
+      position absolute;
+      bottom 0;
+      left 0;
+      right 0;
+      width auto;
+      padding 35px 10px 15px 10px;
+      background -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2))
+      .pic-author-headImg {
+        float left;
+        width 30px;
+        height 30px;
+        border-radius 50%;
+        cursor pointer;
+      }
+      .pic-author-name {
+        display inline-block;
+        margin-left 5px;
+        line-height 30px
+        color: rgba(255, 255, 255, 0.7);
+        float left;
+        max-width 150px;
+        white-space nowrap;
+        overflow hidden;
+        text-overflow ellipsis;
+        cursor pointer;
+      }
+      .pic-download-wrap {
+        float right;
+        padding 5px 10px;
+        border-radius 3px;
+        background rgba(255, 255, 255, 0.7)
+        color #888888;
+        cursor pointer;
+        &:hover {
+          background: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+  }
+}

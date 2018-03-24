@@ -1,0 +1,160 @@
+.personalCenter-contain {
+  margin-top 62px;
+  .personalCenter-details-wrap {
+    padding 20px;
+    text-align left;
+    color: #111;
+    margin-left: 25%;
+    .personalCenter-headImg {
+      width 200px;
+      height 200px;
+      border-radius 50%;
+      margin-right 20px;
+    }
+    .personalCenter-Important-details-wrap{
+      display inline-block;
+      text-align left;
+      vertical-align top;
+      width: 49.8%;
+      .personalCenter-user-name {
+        font-size: 50px;
+        font-weight: bolder;
+        line-height: 105px;
+        .personalCenter-user-more-btn {
+          float right
+          font-size 25px;
+          padding-top:45px;
+          padding-right 40px;
+          &:hover {
+            color: #444444
+            cursor pointer
+          }
+        }
+        .personalCenter-user-more {
+          position absolute;
+          margin-top: -18px;
+          margin-left: 600px;
+          padding 10px;
+          border-radius 3px;
+          font-size 16px;
+          font-weight normal;
+          line-height 30px;
+          border 1px solid #666;
+          background #fff;
+          transform-origin 20px 0 0;
+          &:before, &:after{
+            content:"";
+            display:block;
+            border-width:12px;
+            position:absolute;
+            top -25px;
+            left:28px;
+            border-style:solid dashed dashed;
+            border-color transparent transparent #111;
+            font-size:0;
+            line-height:0;
+          }
+          &:after{
+            top -24px;
+            border-color transparent transparent #fff;
+          }
+          &.personalCenter-more-fade-enter-active {
+            animation personalCenter-more 0.2s;
+          }
+          @keyframes personalCenter-more {
+            0%{
+              transform scale(0.8);
+              opacity 0
+            }
+            90% {
+              transform scale(1.02);
+              opacity 1
+            }
+            100% {
+              transform scale(1);
+            }
+          }
+          &.personalCenter-more-fade-leave-active {
+            transition all 0.2s linear;
+            transform scale(0.8);
+            opacity 0;
+          }
+        }
+      }
+    }
+    .personalCenter-user-realName {
+      font-size 15px;
+      line-height 30px;
+      color: #222
+    }
+    .personalCenter-user-brief {
+      font-size: 16px;
+      color: #444;
+      width: 80%;
+    }
+  }
+  .tag-wrap {
+    width 70%;
+    margin 0 auto;
+    margin-bottom 20px;
+  }
+  .picFlow-control {
+    width 70%;
+    margin 0 auto;
+    font-size 18px;
+    color #aaaaaa;
+    padding 5px 0;
+    overflow hidden;
+    .picFlow-kind, .picFlow-showType{
+      display inline-block;
+      span{
+        display inline-block;
+        padding 0 15px;
+        color #999;
+        cursor pointer;
+        transition-property: color;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        &:hover {
+          color #333;
+        }
+      }
+      .picFlow-kind-active {
+        color #333!important;
+      }
+    }
+    .picFlow-kind {
+      float left;
+    }
+    .picFlow-showType {
+      float right;
+      font-size 28px;
+      span {
+        padding 0 5px;
+      }
+    }
+  }
+  .picFlow-control-pic {
+    margin-left 15%;
+    background #ddd;
+    height 25px;
+    line-height 25px;
+    display inline-block;
+    span {
+      padding 0 15px;
+      font-size 14px;
+      border-right 1px solid #eee;
+      color #888;
+      cursor pointer;
+      transition-property: color;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+      &:hover {
+        color #333;
+      }
+    }
+    .picFlow-control-pic-active {
+      color: #111
+    }
+  }
+}

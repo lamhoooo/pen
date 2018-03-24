@@ -1,0 +1,114 @@
+.login-container {
+  height: 774px;
+  .login-left {
+    position: absolute;
+    width: 400px;
+    height: 245px;
+    border-radius: 5px;
+    background: #fff;
+    top: 245px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    text-align: center;
+    padding 50px 60px;
+    .login-warn {
+      color: #f00;
+      font-size: 12px;
+      height: 25px;
+      text-align: left;
+      margin-left: 130px;
+    }
+    .login-left-floor {
+      margin-bottom 20px;
+      .login-input {
+        height 30px;
+        border 1px solid #bbb;
+        outline none;
+        border-radius 3px;
+        margin-left 3px;
+        padding-left 5px;
+        transition-property: border box-shadow;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        &:hover {
+          border 1px solid #888;
+        }
+        &:focus {
+          border 1px solid #999;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.0750), 0 0 8px rgba(0, 0, 0, 0.3);
+        }
+      }
+      .rememberPW {
+        vertical-align middle;
+      }
+      span {
+        font-size 13px;
+      }
+      .login-forget {
+        color #666;
+        padding-left 5px;
+        margin-left 5px;
+        border-left 1px solid #aaa;
+        cursor pointer;
+        &:hover {
+          color #111;
+        }
+      }
+    }
+    h2 {
+      padding-bottom: 10px;
+    }
+    .login-btn {
+      width 80px;
+      height 30px;
+      line-height 30px;
+      margin-right 10px;
+      background #111;
+      border 1px solid #111;
+      color: #fff;
+      border-radius 3px;
+      cursor: pointer;
+      outline none;
+      transition-property: background color;
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+      &:hover {
+        background #fdfdfd;
+        color #000;
+      }
+    }
+    .sign-btn {
+      font-size 12px;
+      color #666;
+      cursor: pointer;
+      text-decoration none;
+      &:hover {
+        color #000;
+      }
+    }
+  }
+  .login-right {
+    width 100%;
+    padding-top: 62px;
+    table {
+      table-layout: fixed;
+      width 100%
+      background #000000;
+      tr {
+        height 178px;
+        td {
+          width 25%;
+          background no-repeat 50% 50% ;
+          background-size cover;
+          transition-property: opacity;
+          transition-duration: 1s;
+          transition-timing-function: ease;
+          &:hover {
+            opacity 1 !important;
+          }
+        }
+      }
+    }
+  }
+}
